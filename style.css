@@ -530,7 +530,7 @@ logo: helvetica bold
     display: flex;
     flex-direction:column;
     justify-content:center;
-    margin-top:-10vh;
+    /* margin-top:-10vh; */
   }
 
   @media (min-width:767px){
