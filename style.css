@@ -100,6 +100,15 @@ logo: helvetica bold
     float: left;
   }
 
+  @media (max-width:768px){
+    #header .logo{
+      margin-left:22px;
+    }
+    #header .home-logo{
+      margin-left:-12px;
+    }
+  }
+
   @media (min-width: 1000px){
     #header .home-logo{
       margin-left:-40px;
@@ -107,12 +116,6 @@ logo: helvetica bold
     #header .logo{
       /* margin-left:0px; */
       /* padding-left:10px; */
-    }
-  }
-
-  @media (max-width:768px){
-    #header .logo{
-      margin-left:22px;
     }
   }
   
