@@ -1048,6 +1048,28 @@ logo: helvetica bold
   display:flex;
   flex-direction:column;
   justify-content:center;
+  transition:0.35s ease-in-out;
+}
+
+.home-items-container a{
+  width:100%;
+  height:100%;
+}
+
+.home-item-inner{
+  width:100%;
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  transition:0.35s ease-in-out;
+}
+
+.home-items-container .home-item:hover{
+  transform:scale(1.04);
+  transform: translateX(-4px);
+  transform: translateY(-4px);
+  box-shadow: 8px 8px 0px black;
 }
 
 @media (max-width:768px){
@@ -1132,6 +1154,7 @@ logo: helvetica bold
 .about-container #about-img{
   width:40%;
   aspect-ratio: 3 / 4;
+  float:left;
   /* background:lightgray; */
 }
 
@@ -1139,7 +1162,9 @@ logo: helvetica bold
   width:100%;
   height:auto;
   aspect-ratio: 3 / 4;
-
+  /* float:left;
+  padding-right:35px; */
+  /* padding-bottom:10px; */
 }
 
 .about-container #about-text{
@@ -1163,6 +1188,7 @@ logo: helvetica bold
   }
   .about-container #about-img{
     width:100%;
+    padding:0px;
   }
   .about-container #about-text{
     width:100%;
@@ -1178,6 +1204,13 @@ logo: helvetica bold
   margin:auto;
   margin-bottom:35px;
 }
+
+/* @media (max-width:1000px){
+  .photography-container{
+    gap:15px;
+    margin-bottom:15px;
+  }
+} */
 
 .photography-container .photography-item{
   width:30%;
@@ -1339,13 +1372,13 @@ logo: helvetica bold
 @media (max-width:1000px){
   #design-sub .p1{
     flex-direction:column;
-    gap:35px;
   }
 }
 
 @media (max-width:768px){
   #design-sub .p1-imgs{
     flex-direction:column;
+    gap:15px;
   }
   #design-sub .p1-imgs img{
     width:100%;
@@ -1356,56 +1389,6 @@ logo: helvetica bold
   width:100%;
   margin:auto;
 }
-
-/* #sketch .container{
-  display:flex;
-  flex-direction:row;
-  flex-wrap:nowrap;
-  padding:0px;
-  margin:0px;
-  gap:35px;
-  align-items:flex-start;
-}
-
-#sketch .container .left{
-  width:40%;
-  display:grid;
-  padding:0px;
-  margin:0px;
-  grid-template-columns:repeat(2, minmax(0, 1fr));
-  grid-template-rows:repeat(2, minmax(0, 1fr));
-  grid-column-gap: 35px;
-  grid-row-gap: 35px;
-  grid-template-areas: 
-    "div1 div2"
-    "div3 div4";
-}
-
-.div1 { grid-area: div1; }
-.div2 { grid-area: div2; }
-.div3 { grid-area: div3; }
-.div4 { grid-area: div4; }
-
-#sketch .container img{
-  width:100%;
-  height:100%;
-}
-
-#sketch .container .left img{
-  object-fit:contain;
-}
-
-#sketch .container .right{
-  display:grid;
-  padding:0px;
-  margin:0px;
-  grid-template-columns:repeat(2, minmax(0, 1fr));
-  grid-template-rows:repeat(1, minmax(0, 1fr));
-  grid-column-gap: 35px;
-  grid-row-gap: 35px;
-  grid-template-areas: 
-    "div1 div1";
-} */
 
 #sketch .container{
   display: grid;
@@ -1562,17 +1545,23 @@ logo: helvetica bold
 }
 
 @media (max-width:1000px){
-  #sketch .container{
-    /* width:100%;
-    display:flex;
-    flex-direction:column; */
-    gap:15px;
-  }
   #process .container{
     gap:15px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    grid-template-areas: 
+      "div1 div2 div3"
+      "div4 div4 div4";
+    grid-row-gap:25px;
   }
   #final .container{
     gap:15px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+    grid-template-areas: 
+      "div1 div1"
+      "div2 div3"
+      "div4 div4";
   }
   #bottom .flex{
     flex-direction:column;
@@ -1582,5 +1571,17 @@ logo: helvetica bold
   }
   #bottom .type .container{
     gap:15px;
+  }
+  #design-sub .p1-imgs{
+    gap:15px;
+  }
+  #sketch .container{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+    gap:15px;
+    grid-template-areas: 
+    "div1 div2"
+    "div3 div4"
+    "div5 div5";
   }
 }
