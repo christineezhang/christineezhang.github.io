@@ -1305,6 +1305,10 @@ logo: helvetica bold
   gap:100px;
 }
 
+#design-sub .p1 p{
+  margin-bottom:0px;
+}
+
 #design-sub .p1 .item{
   width:100%;
 }
