@@ -1420,14 +1420,6 @@ logo: helvetica bold
   padding:0px;
 }
 
-@media (max-width:1000px){
-  #sketch .container{
-    width:100%;
-    display:flex;
-    flex-direction:column;
-  }
-}
-
 #sketch .container .item img{
   width:100%;
   height:100%;
@@ -1497,4 +1489,16 @@ logo: helvetica bold
   background: url(img/design/horizontal.jpg) center center;
   background-size: cover;
   position: relative;
+}
+
+@media (max-width:1000px){
+  #sketch .container{
+    /* width:100%;
+    display:flex;
+    flex-direction:column; */
+    gap:15px;
+  }
+  #process .container{
+    gap:15px;
+  }
 }
