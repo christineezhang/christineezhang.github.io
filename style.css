@@ -1359,7 +1359,7 @@ logo: helvetica bold
   display:flex;
   flex-direction:row;
   flex-wrap:no-wrap;
-  gap:35px;
+  gap:25px;
   margin:0px;
   padding:0px;
 }
@@ -1394,8 +1394,8 @@ logo: helvetica bold
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
   grid-template-rows: repeat(2, minmax(0, 1fr));
-  grid-column-gap: 35px;
-  grid-row-gap: 35px;
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
   grid-template-areas: 
     "div1 div2 div5 div5 div5"
     "div3 div4 div5 div5 div5";
@@ -1428,7 +1428,7 @@ logo: helvetica bold
   display:flex;
   flex-direction:row;
   flex-wrap:nowrap;
-  gap:35px;
+  gap:25px;
   margin:0px;
   padding:0px;
 }
@@ -1446,8 +1446,8 @@ logo: helvetica bold
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
   grid-template-rows: repeat(1, minmax(0, 1fr));
-  grid-column-gap: 35px;
-  grid-row-gap: 35px;
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
   grid-template-areas: 
     "div1 div2 div3 div4 div4";
   margin:0px;
@@ -1478,8 +1478,8 @@ logo: helvetica bold
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
   grid-template-rows: repeat(2, minmax(0, 1fr));
-  grid-column-gap: 35px;
-  grid-row-gap: 35px;
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
   grid-template-areas: 
     "div1 div1 div1 div2 div3"
     "div1 div1 div1 div4 div4";
@@ -1516,8 +1516,8 @@ logo: helvetica bold
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   grid-template-rows: repeat(2, minmax(0, 1fr));
-  grid-column-gap: 35px;
-  grid-row-gap: 35px;
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
   grid-template-areas: 
     "div1 div2"
     "div3 div4";
@@ -1533,7 +1533,7 @@ logo: helvetica bold
   display:flex;
   flex-direction:column;
   width:100%;
-  gap:35px;
+  gap:25px;
   margin:0px;
   padding:0px;
 }
