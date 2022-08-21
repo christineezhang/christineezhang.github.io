@@ -98,7 +98,7 @@ logo: helvetica bold
 
   @media (max-width:768px){
     #header .logo{
-      margin-left:22px;
+      margin-left:20px;
     }
     #header .home-logo{
       margin-left:-18px;
