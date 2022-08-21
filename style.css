@@ -96,18 +96,20 @@ logo: helvetica bold
     margin-top:40px;
   }
 
-  #header .logo {
-    float: left;
-  }
-
   @media (max-width:768px){
     #header .logo{
       margin-left:22px;
     }
     #header .home-logo{
-      margin-left:-12px;
+      margin-left:-22px;
     }
   }
+
+  /* @media (max-width:767px){
+    #header .home-logo{
+      margin-left:-100px;
+    }
+  } */
 
   @media (min-width: 1000px){
     #header .home-logo{
