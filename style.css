@@ -1198,59 +1198,50 @@ logo: helvetica bold
   letter-spacing:0.8px;
 }
 
-@media (max-width:768px){
-  .photography-container .not-main{
-    display:none;
-  }
-  .photography-container .main{
-    width:100%;
-  }
-}
-
 .photography-container .portrait1{
-  background: url(img/photography/sample.jpg) center center;
+  background: url(img/photography/square.jpg) center center;
   background-size: cover;
   position: relative;
 }
 .photography-container .portrait2{
-  background: url(img/photography/sample.jpg) center center;
+  background: url(img/photography/square.jpg) center center;
   background-size: cover;
   position: relative;
 }
 .photography-container .portrait3{
-  background: url(img/photography/sample.jpg) center center;
+  background: url(img/photography/square.jpg) center center;
   background-size: cover;
   position: relative;
 }
 
 .photography-container .product1{
-  background: url(img/photography/sample.jpg) center center;
+  background: url(img/photography/square.jpg) center center;
   background-size: cover;
   position: relative;
 }
 .photography-container .product2{
-  background: url(img/photography/sample.jpg) center center;
+  background: url(img/photography/square.jpg) center center;
   background-size: cover;
   position: relative;
 }
 .photography-container .product3{
-  background: url(img/photography/sample.jpg) center center;
+  background: url(img/photography/square.jpg) center center;
   background-size: cover;
   position: relative;
 }
 
 .photography-container .environmental1{
-  background: url(img/photography/sample.jpg) center center;
+  background: url(img/photography/square.jpg) center center;
   background-size: cover;
   position: relative;
 }
 .photography-container .environmental2{
-  background: url(img/photography/sample.jpg) center center;
+  background: url(img/photography/square.jpg) center center;
   background-size: cover;
   position: relative;
 }
 .photography-container .environmental3{
-  background: url(img/photography/sample.jpg) center center;
+  background: url(img/photography/square.jpg) center center;
   background-size: cover;
   position: relative;
 }
@@ -1264,6 +1255,15 @@ logo: helvetica bold
   transform: translateX(-4px);
   transform: translateY(-4px);
   box-shadow: 8px 8px 0px black;
+}
+
+@media (max-width:768px){
+  .photography-container .not-main{
+    display:none;
+  }
+  .photography-container .photography-item{
+    width:100%;
+  }
 }
 
 #photo-sub h2{
