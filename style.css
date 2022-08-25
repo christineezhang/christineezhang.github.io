@@ -1330,6 +1330,12 @@ logo: helvetica bold
   position: relative;
 }
 
+.prom2{
+  background: url(img/photography/horizontal.jpg) center center;
+  background-size: cover;
+  position: relative;
+}
+
 /*Eliminates padding, centers the thumbnail */
   
   /* Styles the thumbnail */
@@ -1353,44 +1359,57 @@ logo: helvetica bold
   -o-transition: opacity .5s ease-in-out;
   transition: opacity .5s ease-in-out;
   overflow: hidden;
-   
+   left:0;
+   z-index:2800;
   }
   
   /* Styles the lightbox image, centers it vertically and horizontally, adds the zoom-in transition and makes it responsive using a combination of margin and absolute positioning */
   
+  .lightbox-target .vertical{
+    height:700px;
+  }
+
+  .lightbox-target .horizontal{
+    height:500px;
+  }
+  
   .lightbox-target img {
+    /* width:500px; */
   margin: auto;
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   left:0;
   right:0;
   bottom: 0;
-  max-height: 0%;
-  max-width: 0%;
-  border: 3px solid white;
+  /* max-height: 0%;
+  max-width: 0%; */
+  /* border: 3px solid white; */
   box-shadow: 0px 0px 8px rgba(0,0,0,.3);
   box-sizing: border-box;
   -webkit-transition: .5s ease-in-out;
   -moz-transition: .5s ease-in-out;
   -o-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
-    height:700px;
     width:auto;
   }
-  
   /* Styles the close link, adds the slide down transition */
   
   a.lightbox-close {
   display: block;
   width:50px;
   height:50px;
+  padding:18px;
   box-sizing: border-box;
-  background: white;
+  /* background: white; */
   color: black;
   text-decoration: none;
-  position: absolute;
+  position:absolute;
+  right:0;
+  top:0;
   top: -80px;
   right: 0;
+  top:25px;
+  /* right:3px; */
   -webkit-transition: .5s ease-in-out;
   -moz-transition: .5s ease-in-out;
   -o-transition: .5s ease-in-out;
@@ -1402,12 +1421,12 @@ logo: helvetica bold
   a.lightbox-close:before {
   content: "";
   display: block;
-  height: 30px;
+  height: 20px;
   width: 1px;
   background: black;
   position: absolute;
-  left: 26px;
-  top:10px;
+  /* left: 26px;
+  top:16px; */
   -webkit-transform:rotate(45deg);
   -moz-transform:rotate(45deg);
   -o-transform:rotate(45deg);
@@ -1419,12 +1438,12 @@ logo: helvetica bold
   a.lightbox-close:after {
   content: "";
   display: block;
-  height: 30px;
+  height: 20px;
   width: 1px;
   background: black;
   position: absolute;
-  left: 26px;
-  top:10px;
+  /* left: 26px;
+  top:16px; */
   -webkit-transform:rotate(-45deg);
   -moz-transform:rotate(-45deg);
   -o-transform:rotate(-45deg);
