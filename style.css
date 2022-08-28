@@ -1360,18 +1360,28 @@ logo: helvetica bold
   transition: opacity .5s ease-in-out;
   overflow: hidden;
    left:0;
-   z-index:2800;
+   z-index:200;
   }
   
   /* Styles the lightbox image, centers it vertically and horizontally, adds the zoom-in transition and makes it responsive using a combination of margin and absolute positioning */
   
   .lightbox-target .vertical{
-    height:700px;
+    /* width:98%; */
+    width:600px;
+    margin:auto;
   }
 
   .lightbox-target .horizontal{
-    height:500px;
+    /* width:98%; */
+    width:900px;
+    margin:auto;
   }
+
+  /* @media (max-width:750px){
+    .lightbox-target .vertical{
+      width:98%;
+    }
+  } */
   
   .lightbox-target img {
     /* width:500px; */
@@ -1390,7 +1400,7 @@ logo: helvetica bold
   -moz-transition: .5s ease-in-out;
   -o-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
-    width:auto;
+    height:auto;
   }
   /* Styles the close link, adds the slide down transition */
   
@@ -1454,6 +1464,7 @@ logo: helvetica bold
   
   .lightbox-target:target {
   opacity: 1;
+  z-index:2000;
   top: 0;
   bottom: 0;
     overflow:scroll;
