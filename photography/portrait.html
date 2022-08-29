@@ -12,7 +12,6 @@
   <link href="../style.css" rel="stylesheet">
   <script src="lib/js/index-no-smooth.js"></script>
 </head>
-
 <body>
   <header id="header">
     <div class="container">
@@ -55,7 +54,7 @@
                 <div>
                   <img src="../img/photography/vertical.jpg" class="vertical">
                   <a class="lightbox-close" href="#"></a>
-                  <a class="next-arrow" href="#prom2"></a>
+                  <a class="next-arrow" id="next-arrow" href="#prom2"></a>
                 </div>
               </div>
             </div>
@@ -71,8 +70,8 @@
                 <div>
                   <img src="../img/photography/horizontal.jpg" class="horizontal">
                   <a class="lightbox-close" href="#"></a>
-                  <a class="prev-arrow" href="#prom1"></a>
-                  <a class="next-arrow" href="#prom3"></a>
+                  <a class="prev-arrow" id="prev-arrow" href="#prom1"></a>
+                  <a class="next-arrow" id="next-arrow" href="#prom3"></a>
                 </div>
               </div>
             </div>
@@ -88,8 +87,8 @@
                 <div>
                   <img src="../img/photography/vertical.jpg" class="vertical">
                   <a class="lightbox-close" href="#"></a>
-                  <a class="prev-arrow" href="#prom2"></a>
-                  <a class="next-arrow" href="#prom4"></a>
+                  <a class="prev-arrow" id="prev-arrow" href="#prom2"></a>
+                  <a class="next-arrow" id="next-arrow" href="#prom4"></a>
                 </div>
               </div>
             </div>
@@ -105,8 +104,8 @@
                 <div>
                   <img src="../img/photography/horizontal.jpg" class="horizontal">
                   <a class="lightbox-close" href="#"></a>
-                  <a class="prev-arrow" href="#prom4"></a>
-                  <a class="next-arrow" href="#prom5"></a>
+                  <a class="prev-arrow" id="prev-arrow" href="#prom3"></a>
+                  <a class="next-arrow" id="next-arrow" href="#prom5"></a>
                 </div>
               </div>
             </div>
@@ -122,8 +121,8 @@
                 <div>
                   <img src="../img/photography/vertical.jpg" class="vertical">
                   <a class="lightbox-close" href="#"></a>
-                  <a class="prev-arrow" href="#prom4"></a>
-                  <a class="next-arrow" href="#prom6"></a>
+                  <a class="prev-arrow" id="prev-arrow" href="#prom4"></a>
+                  <a class="next-arrow id="next-arrow"" href="#prom6"></a>
                 </div>
               </div>
             </div>
@@ -139,8 +138,8 @@
                 <div>
                   <img src="../img/photography/horizontal.jpg" class="horizontal">
                   <a class="lightbox-close" href="#"></a>
-                  <a class="prev-arrow" href="#prom5"></a>
-                  <a class="next-arrow" href="#grad1"></a>
+                  <a class="prev-arrow" id="prev-arrow" href="#prom5"></a>
+                  <a class="next-arrow" id="next-arrow" href="#grad1"></a>
                 </div>
               </div>
             </div>
@@ -180,6 +179,24 @@
     </div>
   </footer>
 
+  <!-- <script>
+    document.onkeydown = function (event) {
+      switch (event.keyCode) {
+         case 37:
+            console.log("Left key is pressed.");
+            break;
+         case 38:
+            console.log("Up key is pressed.");
+            break;
+         case 39:
+            console.log("Right key is pressed.");
+            break;
+         case 40:
+            console.log("Down key is pressed.");
+            break;
+      }
+   };
+  </scrip> -->
   <script src="../lib/jquery/jquery.min.js"></script>
   <script src="../lib/jquery/jquery-migrate.min.js"></script>
   <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -190,6 +207,6 @@
   <script src="../lib/superfish/hoverIntent.js"></script>
   <script src="../lib/superfish/superfish.min.js"></script>
   <script src="../js/contactform.js"></script>
-  <script src="lib/js/index-no-smooth.js"></script>
+  <script src="../lib/js/index-no-smooth.js"></script>
 </body>
 </html>
