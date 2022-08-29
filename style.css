@@ -1326,14 +1326,41 @@ logo: helvetica bold
 
 .prom1{
   background: url(img/photography/vertical.jpg) bottom center;
-  background-size: cover;
-  position: relative;
 }
 
 .prom2{
   background: url(img/photography/horizontal.jpg) center center;
+}
+
+.prom3{
+  background: url(img/photography/vertical.jpg) bottom center;
+}
+
+.prom4{
+  background: url(img/photography/horizontal.jpg) center center;
+}
+
+.prom5{
+  background: url(img/photography/vertical.jpg) bottom center;
+}
+
+.prom6{
+  background: url(img/photography/horizontal.jpg) center center;
+}
+
+
+#photo-sub .item-container{
+  overflow:hidden;
+}
+
+#photo-sub .item{
   background-size: cover;
   position: relative;
+  transition:ease-in-out 0.2s;
+}
+
+#photo-sub .item:hover{
+  /* transform:scale(1.08); */
 }
 
 /*Eliminates padding, centers the thumbnail */
