@@ -10,9 +10,10 @@
   <link href="../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="../lib/animate/animate.min.css" rel="stylesheet">
   <link href="../style.css" rel="stylesheet">
+  <script src="lib/js/index-no-smooth.js"></script>
 </head>
 
-<body style="overflow:hidden">
+<body>
   <header id="header">
     <div class="container">
       <div class="pull-left logo">
@@ -45,27 +46,30 @@
 
             <!--item 1-->
             <div class="item prom1">
-              <a class="lightbox" href="#vertical">
+              <a class="lightbox" href="#prom1">
                 <div style="height:100%; width:100%"></div>
               </a>
             </div>
-            <div class="lightbox-target" id="vertical" style="display:flex; flex-direction:column; justify-content:center; align-items:center">
-              <div style="position:relative">
+            <div class="lightbox-target transition" id="prom1" style="overflow:hidden; display:flex; flex-direction:column; justify-content:center; align-items:center">
+              <div>
                 <img src="../img/photography/vertical.jpg" class="vertical">
                 <a class="lightbox-close" href="#"></a>
+                <a class="next-arrow" href="#prom2" class="service"></a>
               </div>
             </div>
 
             <!--item 2-->
             <div class="item prom2">
-              <a class="lightbox" href="#horizontal">
+              <a class="lightbox" href="#prom2">
                 <div style="height:100%; width:100%"></div>
               </a>
             </div>
-            <div class="lightbox-target" id="horizontal" style="display:flex; flex-direction:column; justify-content:center; align-items:center">
-              <div style="position:relative">
+            <div class="lightbox-target transition" id="prom2" style="overflow:hidden; display:flex; flex-direction:column; justify-content:center; align-items:center">
+              <div>
                 <img src="../img/photography/horizontal.jpg" class="horizontal">
                 <a class="lightbox-close" href="#"></a>
+                <a class="prev-arrow" href="#prom1"></a>
+                <a class="next-arrow" href="#horizontal"></a>
               </div>
             </div>
             <div class="item">
@@ -126,6 +130,6 @@
   <script src="../lib/superfish/hoverIntent.js"></script>
   <script src="../lib/superfish/superfish.min.js"></script>
   <script src="../js/contactform.js"></script>
-  <script src="lib/js/index.js"></script>
+  <script src="lib/js/index-no-smooth.js"></script>
 </body>
 </html>
