@@ -1405,6 +1405,8 @@ logo: helvetica bold
   -o-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
     height:auto;
+    padding-right:80px;
+    padding-left:80px;
   }
 
   /* Styles the close link, adds the slide down transition */
